@@ -80,6 +80,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btnSignClick(View view) {
+        try {
+            if (input != "") {
+                num = Double.parseDouble(input);
+
+                num = num * -1;
+                input = Double.toString(num);
+
+                if (num == (int) num) {
+                    showResult.setText(String.valueOf((int) num));
+
+                } else
+                    showResult.setText(String.valueOf(num));
+            }
+        } catch (NumberFormatException ex) {
+            showResult.setText(ex.getMessage());
+        }
     }
 
     public void btnPowerClick(View view) {
