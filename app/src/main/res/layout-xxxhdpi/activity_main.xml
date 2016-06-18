@@ -52,15 +52,15 @@
 
 
             <Button
-                android:id="@+id/btnBack"
+                android:id="@+id/btnPower"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="@string/back"
-                android:textSize="45sp"
-                android:padding="0dp"
+                android:text="@string/power"
+                android:textSize="50sp"
+                android:padding="5dp"
                 android:layout_weight="1"
-                android:onClick="btnBackClick"/>
+                android:onClick="btnPowerClick"/>
 
             <Button
                 android:id="@+id/btnSqr"

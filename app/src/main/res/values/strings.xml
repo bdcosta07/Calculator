@@ -2,11 +2,9 @@
     <string name="app_name">Calculator</string>
     <string name="cancel">Clear</string>
     <string name="signChange">±</string>
-    <string name="back">←</string>
+    <string name="power">^</string>
     <string name="sqrt">√</string>
     <string name="parcent">%</string>
-    <string name="starBrac">(</string>
-    <string name="endBrac">)</string>
     <string name="divide">÷</string>
     <string name="seven">7</string>
     <string name="eight">8</string>

@@ -82,25 +82,26 @@ public class MainActivity extends AppCompatActivity {
     public void btnSignClick(View view) {
     }
 
-    public void btnBackClick(View view) {
+    public void btnPowerClick(View view) {
+        operator = '^';
+        calculate();
+        tempOperator = '^';
     }
 
     public void btnSqrClick(View view) {
         try {
-            num=Double.parseDouble(input);
+            num = Double.parseDouble(input);
             //input="";
 
-            num=num*num;
-            input=Double.toString(num);
+            num = num * num;
+            input = Double.toString(num);
 
             if (num == (int) num) {
                 showResult.setText(String.valueOf((int) num));
 
             } else
                 showResult.setText(String.valueOf(num));
-        }
-        catch (NumberFormatException ex)
-        {
+        } catch (NumberFormatException ex) {
             showResult.setText("Try putting number first");
         }
     }
@@ -112,16 +113,14 @@ public class MainActivity extends AppCompatActivity {
             //operator = '√';
 
             num = sqrt(num);
-            input=Double.toString(num);
+            input = Double.toString(num);
 
             if (num == (int) num) {
                 showResult.setText(String.valueOf((int) num));
 
             } else
                 showResult.setText(String.valueOf(num));
-        }
-        catch (NumberFormatException ex)
-        {
+        } catch (NumberFormatException ex) {
             showResult.setText("Try putting number first");
         }
 
@@ -131,15 +130,13 @@ public class MainActivity extends AppCompatActivity {
         //operator = '%';
         //calculate();
         //tempOperator = '%';
-        try{
-            num=Double.parseDouble(input);
-            double percentNum=tempNum==0?1:tempNum;
-            num=percentNum*num/100;
+        try {
+            num = Double.parseDouble(input);
+            double percentNum = tempNum == 0 ? 1 : tempNum;
+            num = percentNum * num / 100;
             input = String.valueOf(num);
             showResult.setText(input);
-        }
-        catch (NumberFormatException ex)
-        {
+        } catch (NumberFormatException ex) {
 
         }
     }
@@ -189,6 +186,8 @@ public class MainActivity extends AppCompatActivity {
                 num = tempNum + num;
             else if (operator == '-')
                 num = tempNum - num;
+            else if (operator == '^')
+                num = Math.pow(tempNum, num);
 
 
             if (num == (int) num) {
@@ -246,6 +245,8 @@ public class MainActivity extends AppCompatActivity {
                 tempNum = tempNum + num;
             else if (tempOperator == '-')
                 tempNum = tempNum - num;
+            else if (tempOperator == '^')
+                tempNum = Math.pow(tempNum, num);
 
 
             /*if (tempNum == (int) tempNum) {
@@ -256,10 +257,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (tempNum == (int) tempNum) {
-            showResult.setText(String.valueOf((int) tempNum)+" "+operator);
+            showResult.setText(String.valueOf((int) tempNum) + " " + operator);
 
         } else
-            showResult.setText(String.valueOf(tempNum)+" "+operator);
+            showResult.setText(String.valueOf(tempNum) + " " + operator);
     }
 
     public void clearAll() {
@@ -270,5 +271,6 @@ public class MainActivity extends AppCompatActivity {
         tempOperator = '+';
         numCount = 0;
     }
+
 
 }
