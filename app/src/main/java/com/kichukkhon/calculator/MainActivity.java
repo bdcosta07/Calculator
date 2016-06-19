@@ -120,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (NumberFormatException ex) {
             showResult.setText("Try putting number first");
         }
+        clearAll();
     }
 
     public void btnSqrtClick(View view) {
@@ -139,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (NumberFormatException ex) {
             showResult.setText("Try putting number first");
         }
+        clearAll();
 
     }
 
