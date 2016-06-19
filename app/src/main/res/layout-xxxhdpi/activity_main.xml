@@ -46,7 +46,8 @@
                 android:text="@string/cancel"
                 android:textSize="35sp"
                 android:layout_weight="2"
-                android:padding="10dp"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btnCancelClick"/>
 
 
@@ -57,8 +58,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/power"
-                android:textSize="50sp"
-                android:padding="5dp"
+                android:textSize="45sp"
+                android:paddingBottom="5dp"
                 android:layout_weight="1"
                 android:onClick="btnPowerClick"/>
 
@@ -69,6 +70,8 @@
                 android:layout_gravity="right"
                 android:text="x²"
                 android:textSize="35sp"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:layout_weight="1"
                 android:onClick="btnSqrClick"/>
 
@@ -90,6 +93,8 @@
                 android:text="@string/parcent"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btnPercentClick"/>
 
             <Button
@@ -99,6 +104,8 @@
                 android:text="@string/signChange"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btnSignClick"/>
 
             <Button
@@ -108,6 +115,8 @@
                 android:text="@string/sqrt"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btnSqrtClick"/>
 
             <Button
@@ -118,6 +127,8 @@
                 android:text="÷"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btnDivClick"/>
 
 
@@ -138,6 +149,8 @@
                 android:text="@string/seven"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btn7Click"/>
 
             <Button
@@ -156,6 +169,8 @@
                 android:text="@string/nine"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btn9Click"/>
 
             <Button
@@ -186,6 +201,8 @@
                 android:text="@string/four"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btn4Click"/>
 
             <Button
@@ -195,6 +212,8 @@
                 android:text="@string/five"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btn5Click"/>
 
             <Button
@@ -204,6 +223,8 @@
                 android:text="@string/six"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btn6Click"/>
 
             <Button
@@ -234,6 +255,8 @@
                 android:text="@string/one"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btn1Click"/>
 
             <Button
@@ -243,6 +266,8 @@
                 android:text="@string/two"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btn2Click"/>
 
             <Button
@@ -252,6 +277,8 @@
                 android:text="@string/three"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btn3Click"/>
 
             <Button
@@ -262,6 +289,8 @@
                 android:text="@string/plus"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btnPlusClick"/>
 
 
@@ -282,6 +311,8 @@
                 android:text="@string/zero"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btn0Click"/>
 
             <Button
@@ -291,6 +322,8 @@
                 android:text="@string/point"
                 android:textSize="45sp"
                 android:layout_weight="1"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btnPointClick"/>
 
             <Button
@@ -300,6 +333,8 @@
                 android:text="@string/equals"
                 android:textSize="45sp"
                 android:layout_weight="2"
+                android:paddingTop="@dimen/button_padding_top"
+                android:paddingBottom="@dimen/button_padding_bottom"
                 android:onClick="btnEqlClick"/>
 
 
